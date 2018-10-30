@@ -1,0 +1,449 @@
+// Add additional styles here. For example, overwrite certain styles or add new components.
+// Tip: You can use bootstrap's powerful mixins here!
+
+
+
+/* fonts */
+
+.opensans{font-family: $font-family-sans-serif;}
+
+/* buttons */
+
+.button-image:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+/*     vertical-align: text-top; */
+    background-color: transparent;
+    background-position : center center;
+    background-repeat:no-repeat;
+}
+
+.uploadButton:before{
+     background-image : url('../static/img/icons/upload-icon.png');
+}
+
+.personButton:before{
+     background-image : url('../static/img/icons/person-icon.png'); vertical-align: middle; 
+}
+
+
+/**
+ *
+ * Main page start
+ * 
+ **/
+
+//header-top
+
+/* .header-top{height: 60px;} */
+
+.header-top_language_selector_wrapper{display: inline-block;}
+
+/* language switcher */
+
+.header-top_language_selector_wrapper .selectpicker{background: white; text-transform: uppercase; border: none; font-size: 12px;} 
+
+/* smm buttons sprite with links */
+
+.sidebox {
+    overflow: hidden;
+}
+.sidebox-social a:link, .sidebox-social a:visited, .sidebox-social a:hover, .sidebox-social a:active {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 10px 1px;
+    padding: 0;
+    text-indent: -9999em;
+    background-color: transparent;
+    background-image: url('/static/img/social.png');
+    background-repeat: no-repeat;
+}
+
+.sm-youtube {
+    background-position: 0 2px;
+}
+.sm-fac {
+    background-position: -42px 2px;
+}
+
+.sm-twitter {
+    background-position: -84px 2px;
+}
+
+.sm-youtube:hover {
+    background-position: 0 -37px;
+}
+.sm-fac:hover {
+    background-position: -42px -37px;
+}
+
+.sm-twitter:hover {
+    background-position: -84px -37px;
+}
+
+/* smm buttons sprite with links end */
+
+/* header top buttons registration */
+
+.header-top .btn-outline-primary{border-width: 2px;}
+
+
+/* navigation */
+
+.navbar-nav .nav-link {
+    font-size: 0.94rem; font-weight: 500;
+    &:hover {
+        color: $warning;
+    }
+}
+
+
+/* jumbotron */
+
+.mainpage .bg-largeimage
+{
+background: url("/static/img/slider.jpg") no-repeat;
+    background-size: auto auto;
+background-size: cover;
+min-height: 450px;
+margin-bottom: 0;
+
+  @media (min-width:  1200px) {
+    padding-top:  50px;
+  }
+}
+
+.slider_description_extra{margin: 40px auto;}
+
+/* main container */
+
+.mainpage .maincontainer{padding-top: 110px; padding-bottom: 60px;}
+.mainpage .advantagescolumn{color: $dark;}
+.mainpage .youtubecolumn{}
+
+.mainpage .advantagescolumn h2{font-weight: bold;   @media (min-width:  1200px) {
+    font-size:  30px;
+  }
+    
+    
+}
+.mainpage .advantagescolumn h4{font-weight: bold; margin-top: 20px;}
+
+ol.numberedList {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 0;
+}
+ol.numberedList li {
+  margin-bottom: 1.75em;
+  padding-left: 45px;
+  position: relative;
+}
+
+
+ol.numberedList li:nth-child(1):before {
+  content: "1";
+  border: 12px double white;
+  color: #007385;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 55px 0 -20px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #2e5eb0;
+  padding: 5px;
+  color: white;
+}
+ol.numberedList li:nth-child(2):before {
+  content: "2";
+  border: 12px double white;
+  color: #007385;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 55px 0 -20px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #2e5eb0;
+  padding: 5px;
+  color: white;
+}
+ol.numberedList li:nth-child(3):before {
+  content: "3";
+  border: 12px double white;
+  color: #007385;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 55px 0 -20px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #2e5eb0;
+  padding: 5px;
+  color: white;
+}
+ol.numberedList li:nth-child(4):before {
+  content: "4";
+  border: 12px double white;
+  color: #007385;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 55px 0 -20px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #2e5eb0;
+  padding: 5px;
+  color: white;
+}
+ol.numberedList li:nth-child(5):before {
+  content: "5";
+  border: 12px double white;
+  color: #007385;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 55px 0 -20px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #2e5eb0;
+  padding: 5px;
+  color: white;
+}
+ol.numberedList li.oneLiner:before {
+  top: -6px;
+}
+ 
+/* footer */
+.dpfcopyright{line-height: 100px;}
+
+
+/**
+ *
+ * Main page end
+ * 
+ **/
+
+
+/**
+ *
+ * Login page start
+ * 
+ **/
+
+
+.loginpage .logo{margin-bottom: 30px;}
+.loginpage .sidebox-social{margin-bottom: 30px;}
+
+.loginpage .form-group {
+    margin-bottom: 0.85rem;
+}
+.loginpage .login-form-wrapper{margin-top: 30px;}
+.loginpage .login-form .form-check{margin-top: 1.5rem;margin-bottom: 1.5rem; padding-left: 0.05rem;}
+/*.loginpage .login-form input[type=checkbox] {
+  transform: scale(1.5);
+}*/
+
+/* Login form checkbox start */
+.custom-control{
+
+    &.material-checkbox{
+/*        --color: $primary;*/
+        color: $primary;
+        .material-control-input{
+            display: none;
+            &:checked~.material-control-indicator{
+                border-color: var(--color);
+                transform: rotateZ(45deg) translate(1px, -5px);
+                width: 10px;
+                border-top: 0px solid #fff;
+                border-left: 0px solid #fff;
+            }
+        }
+        .material-control-indicator{
+            display: inline-block;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #aaa;
+            transition: .3s;
+        }
+    }
+
+    &.fill-checkbox{
+        --color: #26a69a;
+
+        .fill-control-input{
+            display: none;
+            &:checked~.fill-control-indicator{
+                background-color: purple;
+                border-color: var(--color);
+                background-size: 80%;
+                color: gray;
+            }
+        }
+        .fill-control-indicator{
+            border-radius: 3px;
+            
+            display: inline-block;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #aaa;
+            transition: .3s;
+            background: transperent;
+            background-size: 0%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%3e5eb0' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+        }
+    }
+}
+
+/* Login form checkbox end */
+.loginpage .form-check-label, .loginpage .form-check-label-password{margin-left: 1.25rem;}
+.loginpage .form-check-label{font-size: 0.875rem;}
+.loginpage .form-account-about-question{margin-top: 25px;}
+.loginpage .form-delimiter-bottom{margin-top: 42px;margin-bottom: 34px;}
+
+.loginpage .login-form .btn{font-size:1.5rem; padding: 10px 30px}
+.loginpage .login-form-footer{ font-size: 0.875rem;}
+
+
+/**
+ *
+ * Login page end
+ * 
+ **/
+
+
+
+/**
+ *
+ * Account1 page start
+ * 
+ **/
+
+
+
+
+/* Search form start */
+
+.search-box {
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+  padding: 4px 55px 4px 15px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #ddd;
+
+  &.hovered,
+  &:hover,
+  &:active {
+    border: 1px solid #aaa;
+  }
+
+  input[type=text] {
+    border: none;
+    box-shadow: none;
+    display: inline-block;
+    padding: 0;
+    background: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  .search-btn {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    color: #aaa;
+    border-radius: 3px;
+    font-size: 21px;
+    padding: 5px 10px 1px;
+
+    &:hover {
+      color: #fff;
+      background-color: $primary;
+    }
+  }
+}
+
+
+/* Search form end */
+
+/**
+ *
+ * Account1 page end
+ * 
+ **/
+
