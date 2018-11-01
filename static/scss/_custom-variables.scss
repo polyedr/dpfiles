@@ -31,6 +31,28 @@
 //  "cool": #4d3fa3
 //);
 
+
+// Borders
+
+// Grays
+$gray-300: #dee2e6;
+
+$border-color:                $gray-300;
+
+$border-radius:               .25rem;
+$border-radius-lg:            .3rem;
+$border-radius-sm:            .2rem;
+
+
+//  Fonts
+$font-size-base:              1rem;
+
+
+// Progress bars
+$progress-height:                   1.5rem;
+$progress-font-size:                ($font-size-base * .875);
+
+
 // Changing the theme colors
 $primary: #2e5eb0;
 $secondary: #3ab7ff;

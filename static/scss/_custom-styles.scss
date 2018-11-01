@@ -15,7 +15,6 @@
     height: 16px;
     display: inline-block;
     margin-right: 5px;
-/*     vertical-align: text-top; */
     background-color: transparent;
     background-position : center center;
     background-repeat:no-repeat;
@@ -29,7 +28,29 @@
      background-image : url('../static/img/icons/person-icon.png'); vertical-align: middle; 
 }
 
-
+/* tables */
+.table{font-size: 0.875rem;}
+.table thead th {
+    padding: 1.2rem 0.75rem;
+    border-bottom: 1px solid $gray-300;
+}
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid $gray-300;
+}
+.table-hover tbody tr:active,.table-hover tbody tr:focus {
+    background-color: rgba(255, 246, 246, 0.85);
+}
+.table-hover tbody tr:hover {
+    background-color: rgba(252, 255, 245, 0.85);
+}
+.table-account{border: 1px solid $gray-300; border-right: none; border-left: none;}
+.table-account th{border-top:none;}
+/*
+.table-wrapper{border: 1px solid $gray-300;}
+.table-wrapper .table th {border-top:none;}
+.table-wrapper .table-responsive{width: 95%; margin: 0 auto; display: table;}*/
 /**
  *
  * Main page start
@@ -389,7 +410,7 @@ ol.numberedList li.oneLiner:before {
  **/
 
 
-
+.account .header-top{margin: 54px auto;}
 
 /* Search form start */
 
@@ -397,7 +418,8 @@ ol.numberedList li.oneLiner:before {
   display: inline-block;
   width: 100%;
   border-radius: 3px;
-  padding: 4px 55px 4px 15px;
+/*  padding: 4px 55px 4px 15px;*/
+  padding: 0 55px 0 20px;
   position: relative;
   background: #fff;
   border: 1px solid #ddd;
@@ -424,14 +446,11 @@ ol.numberedList li.oneLiner:before {
 
   .search-btn {
     position: absolute;
-    right: 2px;
-    top: 2px;
+    right: 0;
     color: #aaa;
-    border-radius: 3px;
-    font-size: 21px;
-    padding: 5px 10px 1px;
+    border-radius: 3px; 
 
-    &:hover {
+     &:hover {
       color: #fff;
       background-color: $primary;
     }
@@ -441,9 +460,69 @@ ol.numberedList li.oneLiner:before {
 
 /* Search form end */
 
+/* Pagination start */
+.pagination .page-link{border: none;}
+
+.pagination small, .pagination .small {
+    font-size: 50%;
+    font-weight: 400;
+    padding-bottom: 0.05rem;
+    vertical-align: middle;
+}
+/* Pagination end */
+
 /**
  *
  * Account1 page end
  * 
  **/
 
+/**
+ *
+ * Account2 page start
+ * 
+ **/
+
+/* Upload stockfiles form start */
+
+.account .form-upload-stockfiles .form-control{margin-bottom: 15px;}
+.account .form-upload-stockfiles .progress{margin-bottom: 15px;}
+.account .form-upload-stockfiles .progress-bar{}
+.account .form-upload-stockfiles .btn-primary{font-size: 0.875rem; padding: 0.375rem 2rem;background: #989898; border-color: #989898;}
+
+/* Upload stockfiles form end */
+
+/* Payment form start */
+
+.account .form-payment-wrapper{margin-top: 100px; }
+.account .form-payment-wrapper .form-check-wrapper {margin: 40px 0 20px; font-size: 0.875rem;}
+.account .form-payment-wrapper .form-check-wrapper .form-info {border: 1px solid $gray-300; border-radius: $border-radius; padding: 1.5rem 1.25rem 1.25rem 2.85rem; }
+.account .form-payment-wrapper .form-check {padding-left: 0; margin-bottom: 20px;}
+.account .form-payment-wrapper .form-check .custom-control{padding-left: 2.5rem; text-transform: uppercase;}
+.account .form-payment-wrapper .form-check-wrapper .form-info-heading{font-size:0.875rem; font-weight: bold; display: flex; align-items: center; margin-bottom: 0;} 
+.account .form-payment-wrapper .form-check-wrapper .form-info-heading:before{content: url(../img/icons/info-icon.png); ; width: 1.5rem; height: 1.5rem; margin-left: -1.75rem; margin-right: 0.25rem;}
+.account .form-payment-wrapper .form-info-text {font-size: 0.75rem; font-weight: 300; color: rgba(155,155,155,255);}
+.account .form-payment-wrapper .form-payment-submit-button-wrapper{display: block;}
+.account .form-payment-wrapper .form-check-label-payment-wrapper{display: inline-block; font-size: 1.5rem; font-weight: bold; vertical-align: middle;}
+
+.account .form-payment-wrapper .btn-primary{padding: 10px 30px; font-size: 1.5rem; }
+/* Payment form end */
+
+/* DTS form start */
+.account .form-dts-wrapper {margin-top: 100px;}
+.account .form-dts-wrapper .form-group-wrapper  {padding: 1.5rem 2.5rem; border: 1px solid $gray-300; border-radius: $border-radius;}
+.account .form-dts-wrapper .form-check-label-payment-wrapper{ font-size: 1.5rem; font-weight: bold; margin: 2rem 0;}
+.account .form-dts-wrapper label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: $primary;
+}
+.account .form-dts-wrapper .form-dts-smalltext{margin-bottom: 0.5rem;}
+/* DTS form end */
+
+/**
+ *
+ * Account2 page end
+ * 
+ **/
