@@ -1,6 +1,49 @@
 // Add additional styles here. For example, overwrite certain styles or add new components.
 // Tip: You can use bootstrap's powerful mixins here!
 
+/* tables */
+.table-responsive-stack tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+
+.table-responsive-stack td,
+.table-responsive-stack th {
+   display:block;
+/*      
+   flex-grow | flex-shrink | flex-basis   */
+   -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.table-responsive-stack .table-responsive-stack-thead {
+   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+   .table-responsive-stack tr {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      border-bottom: 3px solid #ccc;
+      display:block;
+      
+   }
+   /*  IE9 FIX   */
+   .table-responsive-stack td {
+      float: left\9;
+      width:100%;
+   }
+}
+
+
 
 
 /* fonts */
@@ -407,7 +450,7 @@ ol.numberedList li.oneLiner:before {
  * Account1 page start
  * 
  **/
-
+.account .main-content-wrapper{position: relative; padding-bottom: 7rem;}
 .account .main-content{margin-top: 0;}
 .account .header-top{margin: 54px auto;}
 
@@ -446,6 +489,7 @@ ol.numberedList li.oneLiner:before {
   .search-btn {
     position: absolute;
     right: 0;
+    top: 0;
     color: #aaa;
     border-radius: 3px; 
 
@@ -657,7 +701,7 @@ ol.numberedList li.oneLiner:before {
 .navbar-primary .nav-label:before{padding-right: 1rem; color: $primary;}
 
 // Second menu
-.menu-second{margin-top: 6rem; font-size: 0.875rem;}
+.menu-second{margin-top: 5rem; font-size: 0.875rem;}
 
 
 // Social icons on the sidebar
