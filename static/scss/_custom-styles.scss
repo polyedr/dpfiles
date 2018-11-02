@@ -9,6 +9,9 @@
 
 /* buttons */
 
+/*  outline buttons, header top registration, account2 */
+.btn-outline-primary{border-width: 2px;}
+.account .btn-outline-primary{border-width: 2px; padding-left: 1.5rem; padding-right: 1.5rem;}
 .button-image:before {
     content: "";
     width: 16px;
@@ -47,6 +50,7 @@
 }
 .table-account{border: 1px solid $gray-300; border-right: none; border-left: none;}
 .table-account th{border-top:none;}
+.table-account label{margin-bottom: 0;}
 /*
 .table-wrapper{border: 1px solid $gray-300;}
 .table-wrapper .table th {border-top:none;}
@@ -107,11 +111,6 @@
 }
 
 /* smm buttons sprite with links end */
-
-/* header top buttons registration */
-
-.header-top .btn-outline-primary{border-width: 2px;}
-
 
 /* navigation */
 
@@ -409,7 +408,7 @@ ol.numberedList li.oneLiner:before {
  * 
  **/
 
-
+.account .main-content{margin-top: 0;}
 .account .header-top{margin: 54px auto;}
 
 /* Search form start */
@@ -484,7 +483,7 @@ ol.numberedList li.oneLiner:before {
  **/
 
 /* Upload stockfiles form start */
-
+.account footer{min-height: 9rem;}
 .account .form-upload-stockfiles .form-control{margin-bottom: 15px;}
 .account .form-upload-stockfiles .progress{margin-bottom: 15px;}
 .account .form-upload-stockfiles .progress-bar{}
@@ -494,7 +493,7 @@ ol.numberedList li.oneLiner:before {
 
 /* Payment form start */
 
-.account .form-payment-wrapper{margin-top: 100px; }
+.account .form-payment-wrapper{margin-top: 100px; margin-bottom: 2rem;}
 .account .form-payment-wrapper .form-check-wrapper {margin: 40px 0 20px; font-size: 0.875rem;}
 .account .form-payment-wrapper .form-check-wrapper .form-info {border: 1px solid $gray-300; border-radius: $border-radius; padding: 1.5rem 1.25rem 1.25rem 2.85rem; }
 .account .form-payment-wrapper .form-check {padding-left: 0; margin-bottom: 20px;}
@@ -505,8 +504,15 @@ ol.numberedList li.oneLiner:before {
 .account .form-payment-wrapper .form-payment-submit-button-wrapper{display: block;}
 .account .form-payment-wrapper .form-check-label-payment-wrapper{display: inline-block; font-size: 1.5rem; font-weight: bold; vertical-align: middle;}
 
-.account .form-payment-wrapper .btn-primary{padding: 10px 30px; font-size: 1.5rem; }
+.account .form-payment-wrapper .btn-primary{padding: 0.5rem 1.5rem; font-size: 1.5rem; }
 /* Payment form end */
+
+/* Info block start */
+.info_divs_wrapper{padding: 1.5rem 2.5rem 0.5rem; border: 1px solid $gray-300; border-radius: $border-radius;}
+.row-info-block{border-bottom:  1px solid $gray-300; line-height: 3rem; font-size:1.125rem;}
+.info_divs_wrapper .row-info-block:last-child{border-bottom: none;}
+/* Info block end */
+
 
 /* DTS form start */
 .account .form-dts-wrapper {margin-top: 100px;}
@@ -519,10 +525,147 @@ ol.numberedList li.oneLiner:before {
     color: $primary;
 }
 .account .form-dts-wrapper .form-dts-smalltext{margin-bottom: 0.5rem;}
+.account .btn-outline-primary{padding: 0.5rem 1.5rem; font-size: 1.5rem; margin-bottom: 0.5rem;}
 /* DTS form end */
 
 /**
  *
  * Account2 page end
+ * 
+ **/
+
+/**
+ *
+ * Left sidebar menu start
+ * 
+ **/
+
+
+.navbar-primary {
+  background-color: $gray-300;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24rem;
+  z-index: 8;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  border-left: 60px solid $primary;
+  box-shadow: 5px 0 0 2.5px $gray-400 inset;
+}
+
+.navbar-primary.collapsed {
+  width: 60px;
+  background-color: $primary;
+          box-shadow: 5px 0 2.5px -1px $gray-300;
+          border-left: none;
+}
+
+.navbar-primary.collapsed .glyphicon {
+  font-size: 22px;
+}
+
+// Hide sidebar elements when collapse
+.navbar-primary.collapsed .nav-label {
+  display: none;
+}
+
+.navbar-primary .stacked-label {
+  display: none;
+}
+
+.navbar-primary.collapsed .stacked-label {
+  display: block;
+  color: #fff;
+}
+
+
+.btn-expand-collapse {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    padding: 8px 0;
+    border-top:solid 1px #666;
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-expand-collapse:hover,
+.btn-expand-collapse:focus {
+    background-color: #222;
+    color: white;
+}
+
+.btn-expand-collapse:active {
+    background-color: #111;
+}
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+  margin:0; padding:0;
+  list-style: none;
+}
+
+.navbar-primary-menu li a {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  text-align: left;
+
+}
+.navbar-primary-menu li a .logo{margin-bottom: 2rem;}
+
+.navbar-primary-menu li a:hover {
+  background-color: $gray-500;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-primary-menu li a .glyphicon {
+  margin-right: 6px;
+}
+
+.navbar-primary-menu li a:hover .glyphicon {
+  color: orchid;
+}
+
+.main-content {
+  margin-top: 60px;
+  margin-left: 24rem;
+  padding: 20px;
+}
+
+.collapsed + .main-content {
+  margin-left: 60px;
+}
+
+
+.navbar-primary-inner{margin-top: 2rem;}
+.navbar-primary .logo-item{margin-bottom: 1rem;}
+
+// Stacked sidebar
+.navbar-primary.collapsed .first-menu > li:nth-child(1) > a:nth-child(1){ padding-left: 0.5rem;}
+.navbar-primary.collapsed .second-menu > li:last-child > a:last-child{ padding-left: 0.5rem;}
+// Full 
+.navbar-primary .nav-label{margin-left: 2rem;}
+.navbar-primary .nav-label{color: initial;}
+.navbar-primary .nav-label:before{padding-right: 1rem; color: $primary;}
+
+// Second menu
+.menu-second{margin-top: 6rem; font-size: 0.875rem;}
+
+
+// Social icons on the sidebar
+.menu-second .vertical-social {padding-left: 0.5rem; margin-top: 1.5rem;}
+.menu-second .sidebox-social {padding-left: 1rem;}
+.menu-second .sidebox-social a:hover{background-color: transparent;}
+/**
+ *
+ * Left sidebar menu end
  * 
  **/
